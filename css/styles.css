@@ -37,7 +37,20 @@ label , p{
     width: 40%;
     padding: 50px;
     border-radius: 2rem;
-    border: 1px solid #13ce70;
+    border: 1px solid #fffb00;
 }
 
+
+@media (max-width: 800px){
+   
+    .cajita{
+        width: 80%;
+        height: 50%;
+    }
+
+    .container{
+      width: 50%;
+     flex-flow: column wrap;
+    }
+}
 
