@@ -1,0 +1,24 @@
+#contenedor{
+    width: 100%;
+    min-height: 30dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+#caja_2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #028FD5;
+}
+
+button{
+    padding: .7rem;
+    border: 1px solid #2e19eb;
+    background-color: #03689b;
+    border-radius: 10px;
+    color: #fff;
+}

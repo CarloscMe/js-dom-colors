@@ -1,8 +1,9 @@
-/*const boton = document.querySelector("button");
+const boton = document.querySelector("button");
 const color = document.getElementById("color");
+const contenedor = document.getElementById("caja_2")
 
 function generarColorHexAleatorio() {
-    let digitos = "0123456789ABCDEF";
+    let digitos = "0123456789abcdef";
     let colorHex = "#";
 
     for (let i = 0; i < 6; i++) {
@@ -13,20 +14,15 @@ function generarColorHexAleatorio() {
     return colorHex;
 }
 
-// Verificar si hay un color guardado en localStorage
 const colorGuardado = localStorage.getItem("colorFondo");
 if (colorGuardado) {
-    // Si existe, aplicamos el color guardado al fondo y lo mostramos
-    document.body.style.backgroundColor = colorGuardado;
+    contenedor.style.backgroundColor = colorGuardado;
     color.innerText = colorGuardado;
 }
 
 boton.addEventListener("click", function() {
     let colorAleatorio = generarColorHexAleatorio();
     color.innerText = colorAleatorio;
-
-    document.body.style.backgroundColor = colorAleatorio;
-
-    // Guardar el color en localStorage
+    contenedor.style.backgroundColor = colorAleatorio;
     localStorage.setItem("colorFondo", colorAleatorio);
-});*/
+});
