@@ -42,12 +42,28 @@ label , p{
     border: 1px solid #fffb00;
 }
 
+code{
+    display: block;
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+span{
+    display: inline-block;
+    margin: 0 5px 0 0;
+}
+
+span:last-child{
+    margin: 0;
+}
+
 @media (max-width: 800px){
    
     .cajita{
         margin-top: 2rem;
         width: 80%;
         height: 50%;
+        margin: 5px 0 5px 0;
     }
 
     .container{
@@ -55,6 +71,7 @@ label , p{
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
+      margin-top: 5px;
     }
 }
 

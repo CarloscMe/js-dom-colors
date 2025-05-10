@@ -3,10 +3,15 @@ const inputVerde = document.getElementById("verde");
 const inputAzul = document.getElementById("azul");
 const inputAlpha = document.getElementById("alpha");
 
-const textoRojo = document.getElementById("texto-rojo");
-const textoVerde = document.getElementById("texto-verde");
-const textoAzul = document.getElementById("texto-azul");
-const textoAlpha = document.getElementById("texto-alpha");
+const textoRojo = document.querySelector(".texto-rojo");
+const textoVerde = document.querySelector(".texto-verde");
+const textoAzul = document.querySelector(".texto-azul");
+const textoAlpha = document.querySelector(".texto-alpha");
+
+const strong = document.querySelector(".red");
+const strong1 = document.querySelector(".green");
+const strong2= document.querySelector(".blue");
+const strong3= document.querySelector(".alpha");
 
 const caja = document.querySelector(".cajita");
 
@@ -20,33 +25,35 @@ textoVerde.innerText = verde;
 textoAzul.innerText = azul;
 textoAlpha.innerText = alpha;
 
-
 function actualizarColor(rojo,verde,azul, alpha) {
     const colorRGB = `rgb(${rojo}, ${verde}, ${azul}, ${alpha})`;
     caja.style.backgroundColor = colorRGB;
 }
 
 inputRojo.addEventListener("change", () =>{
-   rojo = inputRojo.value;
+  rojo = inputRojo.value;
   textoRojo.innerText = rojo;
+  strong.textContent = rojo;
   actualizarColor(rojo, verde, azul, alpha)
 });
 
 inputVerde.addEventListener("change", () =>{
-    verde = inputVerde.value;
+   verde = inputVerde.value;
    textoVerde.innerText = verde;
+   strong1.textContent = verde;
    actualizarColor(rojo, verde, azul, alpha)
  });
 
  inputAzul.addEventListener("change", () =>{
-    azul = inputAzul.value;
+   azul = inputAzul.value;
    textoAzul.innerText = azul;
+   strong2.textContent = azul;
    actualizarColor(rojo, verde, azul, alpha)
  });
 
  inputAlpha.addEventListener("change", () => {
     alpha = inputAlpha.value;
     textoAlpha.innerText = alpha;
+    strong3.textContent = alpha;
     actualizarColor(rojo, verde, azul, alpha)
  });
-
