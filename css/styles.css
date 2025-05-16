@@ -40,6 +40,7 @@ label , p{
     padding: 50px;
     border-radius: 2rem;
     border: 1px solid #fffb00;
+    animation: hola 3s linear 1.5s both;
 }
 
 code{
@@ -55,6 +56,25 @@ span{
 
 span:last-child{
     margin: 0;
+}
+
+input[type="range"]{
+    appearance: none;
+    accent-color: rgb(0, 0, 0);
+    cursor: grab;
+}
+
+input[type="range"]:active{
+    cursor: grabbing;
+}
+
+@keyframes hola {
+    from{
+        transform: scaleX(0);
+    }
+    to{
+        transform: scaleX(1);
+    }
 }
 
 @media (max-width: 800px){

@@ -30,28 +30,28 @@ function actualizarColor(rojo,verde,azul, alpha) {
     caja.style.backgroundColor = colorRGB;
 }
 
-inputRojo.addEventListener("change", () =>{
+inputRojo.addEventListener("input", () =>{
   rojo = inputRojo.value;
   textoRojo.innerText = rojo;
   strong.textContent = rojo;
   actualizarColor(rojo, verde, azul, alpha)
 });
 
-inputVerde.addEventListener("change", () =>{
+inputVerde.addEventListener("input", () =>{
    verde = inputVerde.value;
    textoVerde.innerText = verde;
    strong1.textContent = verde;
    actualizarColor(rojo, verde, azul, alpha)
  });
 
- inputAzul.addEventListener("change", () =>{
+ inputAzul.addEventListener("input", () =>{
    azul = inputAzul.value;
    textoAzul.innerText = azul;
    strong2.textContent = azul;
    actualizarColor(rojo, verde, azul, alpha)
  });
 
- inputAlpha.addEventListener("change", () => {
+ inputAlpha.addEventListener("input", () => {
     alpha = inputAlpha.value;
     textoAlpha.innerText = alpha;
     strong3.textContent = alpha;
