@@ -39,8 +39,8 @@ label , p{
     width: 40%;
     padding: 50px;
     border-radius: 2rem;
-    border: 1px solid #fffb00;
-    animation: hola 3s linear 1.5s both;
+    border: 1px solid #028FD5;
+    animation: hola 3s linear 1s both;
 }
 
 code{

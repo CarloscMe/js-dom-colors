@@ -12,13 +12,18 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #028FD5;
+  font-size: 1.1rem;
 }
 
 button{
     padding: .7rem;
     border: 1px solid #2e19eb;
-    background-color: #03689b;
+    background: linear-gradient(rgb(0, 255, 76),rgb(0, 0, 255));
     border-radius: 10px;
     color: #fff;
+    transition: background .7s ease;
+}
+
+button:hover{
+   background: linear-gradient(rgb(0, 0, 255),rgb(0, 255, 76));
 }
